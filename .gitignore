@@ -1,0 +1,15 @@
+node_modules
+coverage
+.vscode
+.DS_STORE
+.env
+tmp
+.adonisrc.json
+ace
+server.js.map
+test.js
+test.js.map
+tsconfig.tsbuildinfo
+package-lock.json
+package.json
+server.js

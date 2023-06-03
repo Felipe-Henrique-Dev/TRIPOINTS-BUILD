@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{--  enviar token de autenticacion  --}}
+    <meta name='Autorization' content='{{token}}'>
+    <title>Match</title>
+    @entryPointScripts('app')
+    @entryPointStyles('app')
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <main>
+
+      <div class="index" id='index'>
+        <header style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100px">
+          <img src="/uploads/logo.png" alt="logo" class="logo">
+        </header>	
+
+      </div>
+      <span class="msgs-container" style="display: none;"></span>
+      <span class='_csrf'>{{ csrfField() }}</span>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+  </body>
+</html>

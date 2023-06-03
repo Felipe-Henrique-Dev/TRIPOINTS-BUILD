@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOGIN</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @entryPointScripts('app')
+    @entryPointStyles('Home')
+    @entryPointStyles('app')
+    
+
+  </head>
+  <body>
+    <main>
+      {{ csrfField() }}
+      <div class="index" id='index'>
+
+      </div>
+      <span class="msgs-container" style="display: none;"></span>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+  </body>
+</html>
+
